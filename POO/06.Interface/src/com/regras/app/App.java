@@ -8,8 +8,6 @@ public class App {
         Conta cc = new Conta(null, null, "1234-5", "12345-6", 0);
         Scanner leia = new Scanner(System.in);
 
-        // TODO: complete o código-fonte e divirtam-se!!! =D
-
         // declaração de variável
         int opcao;
         double valor;
