@@ -68,6 +68,17 @@ public class App {
                     );
 
                     break;
+                case "Fazer saque":
+                    valor = Double.parseDouble(JOptionPane.showInputDialog("Informe o valor do saque em R$:"));
+
+                    JOptionPane.showMessageDialog(
+                        null, 
+                        "Saque efetuado com sucesso!.\nSaldo atual: R$ " + cc.fazerSaque(valor), 
+                        "Depósito", 
+                        JOptionPane.INFORMATION_MESSAGE
+                    );
+
+                    break;
             }
         } while (opcao != "Sair");
     }
