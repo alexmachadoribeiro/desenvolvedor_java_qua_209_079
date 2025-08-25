@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- autor da página -->
+    <meta name="autor" content="Alex Machado Ribeiro" />
+
+    <!-- Indexa a página nos mecanismos de busca -->
+    <meta name="robots" content="index, follow" />
+    <meta name="keywords" content="java, senai, indústria, industria, programação, programacao, programador, desenvolvedor, desenvolvimento, qua, qua.209.079, qua209079, qua.209079, qua209.079, alex, machado, ribeiro, vespertino, web, jee, ee, taguatinga, df" />
+    <meta name="description" content="Sistema Front-End feito no curso de Desenvolvedor Java vespertino do SENAI Taguatinga - DF." />
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Formulário</h1>
+    <hr />
+    <form method="">
+        <label for="nome">Nome:</label><br />
+        <input type="text" placeholder="Digite o seu nome" minlength="3" maxlength="10" /><br /><br />
+        <label for="idade">Idade:</label><br />
+        <input type="number" value="18" min="12" max="65" /><br /><br />
+        <label for="dataNascimento">Data de nascimento:</label><br />
+        <input type="date" /><br /><br />
+        <label for="senha">Senha:</label><br />
+        <input type="password" /><br /><br />
+        <label for="genero">Gênero:</label><br />
+        <input type="radio" name="genero" /><span>Masculino</span><br />
+        <input type="radio" name="genero" /><span>Feminino</span><br />
+        <input type="radio" name="genero" /><span>Outros</span><br />
+        <input type="radio" name="genero" /><span>Prefiro não informar</span><br />
+        <br />
+        <label for="escolaridade">Escolaridade:</label><br />
+        <select>
+            <option name="escolaridade">Escolha uma opção...</option>
+            <option name="escolaridade">Nível fundamental</option>
+            <option name="escolaridade">Nível médio</option>
+            <option name="escolaridade">Nível superior</option>
+            <option name="escolaridade">Pós-graduação</option>
+            <option name="escolaridade">Mestrado</option>
+            <option name="escolaridade">Doutorado</option>
+        </select>
+        <br /><br />
+        <label>Escolha as linguagens de programação que domina:</label><br />
+        <input type="checkbox" name="linguagens"><span>C</span><br />
+        <input type="checkbox" name="linguagens"><span>C++</span><br />
+        <input type="checkbox" name="linguagens"><span>C#</span><br />
+        <input type="checkbox" name="linguagens"><span>Java</span><br />
+        <input type="checkbox" name="linguagens"><span>Python</span><br />
+        <input type="checkbox" name="linguagens"><span>JavaScript</span><br />
+        <input type="checkbox" name="linguagens"><span>Lua</span><br />
+        <input type="checkbox" name="linguagens"><span>Ruby</span><br />
+        <input type="checkbox" name="linguagens"><span>Cobol</span><br />
+        <br />
+        <label>Digite um comentário:</label><br />
+        <textarea value="" rows="5" cols="55"></textarea><br /><br />
+        <label>Envie um arquivo:</label><br />
+        <input type="file" /><br /><br />
+        <button type="submit">Cadastrar</button>
+    </form>
+</body>
+</html>
