@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta name="author" content="Alex Machado Ribeiro">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Máscaras de entrada</h1>
+    <hr>
+
+    <!-- formulário -->
+    <form method="">
+        <label for="nome">Nome:</label><br>
+        <input type="text" id="nome" placeholder="Digite seu nome"><br><br>
+        <label for="cpf">CPF:</label><br>
+        <input type="text" id="cpf" placeholder="000.000.000-00" maxlength="14"><br><br>
+        <label for="telefone">Telefone:</label><br>
+        <input type="tel" id="telefone" placeholder="(00) 00000-0000" maxlength="15"><br><br>
+        <label for="cep">CEP:</label><br>
+        <input type="text" id="cep" placeholder="00000-000" maxlength="9"><br><br>
+        <button type="submit">Enviar</button><br><br>
+    </form>
+
+    <!-- resultado -->
+    <h2 id="result"></h2>
+
+    <!-- java script -->
+    <script src="js/script.js"></script>
+</body>
+</html>
