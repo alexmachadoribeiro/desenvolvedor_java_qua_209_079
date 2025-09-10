@@ -1,0 +1,16 @@
+body {
+    margin: 0px auto;
+    padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.imagem {
+    display: flex;
+    justify-content: center;
+    min-width: 100%;
+}
+
+.imagem figure img {
+    box-shadow: 10px 10px 20px #16161d;
+    border-radius: 20px;
+}
