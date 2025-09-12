@@ -19,7 +19,8 @@ public class DataConfig {
         dataSource.setUsername("root");
         dataSource.setPassword("");
 
-        return dataSource();
+        // FIXME: trocar dataSource() pelo comando abaixo
+        return dataSource;
     }
 
     @Bean
@@ -29,7 +30,8 @@ public class DataConfig {
         adapter.setDatabase(Database.MYSQL);
         adapter.setShowSql(true);
         adapter.setGenerateDdl(true);
-        adapter.setDatabasePlatform("org.hibernate.dialect.MySQL5Dialect");
+        // FIXME: trocar MySQL5Dialect pelo comando da linha abaixo
+        adapter.setDatabasePlatform("org.hibernate.dialect.MySQL8Dialect");
         adapter.setPrepareConnection(true);
 
         return adapter;
