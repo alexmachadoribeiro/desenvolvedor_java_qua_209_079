@@ -18,8 +18,6 @@ public class DataConfig {
         dataSource.setUrl("jdbc:mysql://localhost:3306/db_java");
         dataSource.setUsername("root");
         dataSource.setPassword("");
-
-        // FIXME: trocar dataSource() pelo comando abaixo
         return dataSource;
     }
 
@@ -30,7 +28,6 @@ public class DataConfig {
         adapter.setDatabase(Database.MYSQL);
         adapter.setShowSql(true);
         adapter.setGenerateDdl(true);
-        // FIXME: trocar MySQL5Dialect pelo comando da linha abaixo
         adapter.setDatabasePlatform("org.hibernate.dialect.MySQL8Dialect");
         adapter.setPrepareConnection(true);
 

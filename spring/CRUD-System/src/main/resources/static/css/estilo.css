@@ -1,0 +1,17 @@
+nav {
+    box-shadow: 0px 5px 20px #16161d;
+}
+
+h1 {
+    text-align: center;
+}
+
+.code-img {
+    display: flex;
+    justify-content: center;
+}
+
+.code-img img {
+    box-shadow: 5px 5px 20px #16161d;
+    border-radius: 20px;
+}
