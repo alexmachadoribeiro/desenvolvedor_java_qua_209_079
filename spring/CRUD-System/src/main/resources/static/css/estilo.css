@@ -15,3 +15,12 @@ h1 {
     box-shadow: 5px 5px 20px #16161d;
     border-radius: 20px;
 }
+
+.celula {
+    background-color: #16161d;
+    margin: 1px;
+}
+
+.botao-celula {
+    margin: 3px 0px;
+}

@@ -1,13 +1,14 @@
 <!doctype html>
-<html lang="pt-br">
+<html lang="pt-br" xmlns:th="https://thymeleaf.org" xmlns:layout="https://www.ultraq.net.nz/thymeleaf/layout">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Spring e Bootstrap</title>
+    <title>Cadastrar usuário</title>
 
     <!-- bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
     <!-- favicon -->
     <link href="img/icone.png" rel="shortcut icon" type="image/png">
@@ -31,13 +32,13 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link" aria-current="page" href="/">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/cadastrar">Cadastrar usuário</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/listarUsuarios">Listar usuários</a>
+                        <a class="nav-link active" href="#">Listar usuários</a>
                     </li>
                 </ul>
             </div>
@@ -47,11 +48,32 @@
 
     <!-- container -->
     <div class="container">
-        <h1>Sistema CRUD</h1>
+        <h1>Lista de usuários</h1>
         <hr class="mb-5">
-        <figure class="code-img">
-            <img src="img/code-img.jpg" alt="Imagem da página" class="img-fluid">
-        </figure>
+
+        <!-- listar usuários -->
+        <div th:each="usuario : ${usuarios}">
+            <div class="row">
+                <div class="col-12 col-md-2 col-lg-1 celula">
+                    <b>ID: </b><span th:text="${usuario.idPessoa}"></span>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 celula">
+                    <b>Nome: </b><span th:text="${usuario.nome}"></span>
+                </div>
+                <div class="col-12 col-md-4 col-lg-2 celula">
+                    <b>CPF: </b><span th:text="${usuario.cpf}"></span>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 celula">
+                    <b>E-mail: </b><span th:text="${usuario.email}"></span>
+                </div>
+                <div class="col-6 col-md-3 col-lg-1 botao-celula">
+                    <button type="button" class="btn btn-warning">Alterar</button>
+                </div>
+                <div class="col-6 col-md-2 col-lg-1 botao-celula">
+                    <button type="button" class="btn btn-danger">Excluir</button>
+                </div>
+            </div>
+        </div>
     </div>
     <!-- fim do container -->
     <!-- scripts -->
